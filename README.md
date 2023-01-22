@@ -1,6 +1,6 @@
 # habit_tracker
 
-# Setup
+# Project setup
 ```bash
 npm i fastify
 npm i typescript -D
@@ -9,6 +9,16 @@ npx tsc init # create tsconfig.json file
 npm i tsx -D
 # create dev script in package.json with tsx watch src/server.ts
 ```
+# Prisma setup
+```bash
+npm i -D prisma
+npm i @prisma/client
+npx prisma init --datasource-provider SQLite
+npx prisma migrate dev # to generate a migration (asks for the name of the migration that will be concatenated to the name of the migration file)
+npx prisma studio # opens browser interface to inspect the DB
+```
+
 # Resources
 
 - [fastify for requests handling instead of express](https://www.fastify.io/)
+- [prisma orm](https://www.prisma.io/)
