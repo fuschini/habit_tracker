@@ -21,9 +21,15 @@ npx prisma studio # opens browser interface to inspect the DB
 ```bash
 npm create vite@latest # framework: React, variant: typescript
 ```
+# Tailwind setup
+```bash
+npm i -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p # needs -p flag to create postcss config file and integrate with Vite
+```
 
 # Resources
 
 - [fastify for requests handling instead of express](https://www.fastify.io/)
 - [prisma orm](https://www.prisma.io/)
 - [Vite for managing the frontend](https://vitejs.dev/)
+- [Tailwind CSS framework](https://tailwindcss.com/)
