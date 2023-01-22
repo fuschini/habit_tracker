@@ -17,8 +17,13 @@ npx prisma init --datasource-provider SQLite
 npx prisma migrate dev # to generate a migration (asks for the name of the migration that will be concatenated to the name of the migration file)
 npx prisma studio # opens browser interface to inspect the DB
 ```
+# Vite setup
+```bash
+npm create vite@latest # framework: React, variant: typescript
+```
 
 # Resources
 
 - [fastify for requests handling instead of express](https://www.fastify.io/)
 - [prisma orm](https://www.prisma.io/)
+- [Vite for managing the frontend](https://vitejs.dev/)
