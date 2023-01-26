@@ -27,9 +27,21 @@ npm i -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p # needs -p flag to create postcss config file and integrate with Vite
 ```
 
+# Expo setup
+Following the steps on [this link](https://react-native.rocketseat.dev/expo-managed/macos)
+```bash
+brew install watchman
+npm install -g expo-cli
+# Install Expo Go app on the physical device
+npx create-expo-app mobile --template # in the project folder and select template Basic (Typescript)
+expo start # to start local application
+```
+
+
 # Resources
 
 - [fastify for requests handling instead of express](https://www.fastify.io/)
 - [prisma orm](https://www.prisma.io/)
 - [Vite for managing the frontend](https://vitejs.dev/)
 - [Tailwind CSS framework](https://tailwindcss.com/)
+- [Expo for facilitating the dev environment for the mobile version](https://expo.dev/)
