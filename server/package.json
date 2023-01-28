@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio",
     "dev": "tsx watch src/server.ts"
   },
   "repository": {
