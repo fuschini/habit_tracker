@@ -11,11 +11,11 @@ datasource db {
 }
 
 model Habit {
-  id            String          @id @default(uuid())
-  title         String
-  created_at    DateTime
-  dayHabits     DayHabit[]
-  HabitWeekDays HabitWeekDays[]
+  id         String          @id @default(uuid())
+  title      String
+  created_at DateTime
+  weekDays   HabitWeekDays[]
+  dayHabits  DayHabit[]
 
   @@map("habits")
 }
@@ -25,8 +25,7 @@ model HabitWeekDays {
   habit_id String
   week_day Int
 
-  habit   Habit  @relation(fields: [habitId], references: [id])
-  habitId String
+  habit Habit @relation(fields: [habit_id], references: [id])
 
   @@unique([week_day, habit_id])
   @@map("habit_week_days")
@@ -46,10 +45,8 @@ model DayHabit {
   day_id   String
   habit_id String
 
-  day     Day    @relation(fields: [day_id], references: [id]) // NOTE: You can add these paramters with VS Code "Format Document" command
-  habit   Habit  @relation(fields: [habit_id], references: [id])
-  dayId   String
-  habitId String
+  day   Day   @relation(fields: [day_id], references: [id])
+  habit Habit @relation(fields: [habit_id], references: [id])
 
   @@unique([day_id, habit_id]) // NOTE: declaration of a unique composed index
   @@map("day_habits")
