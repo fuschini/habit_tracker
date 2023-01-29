@@ -4,12 +4,13 @@ import { prisma } from './lib/prisma'
 import { appRoutes } from './routes'
 
 const app = Fastify()
+const port = 3000
 
 app.register(cors)
 app.register(appRoutes)
 
 app.listen({
-    port: 3333
+    port
 }).then(() => {
-    console.log('Server running on port 3333');
+    console.log(`Server running on port ${port}`);
 })
