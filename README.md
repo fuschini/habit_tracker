@@ -55,3 +55,4 @@ expo start # to start local application
 - [Expo for facilitating the dev environment for the mobile version](https://expo.dev/)
 - [Zod for backend requests validation and type definitions](https://www.npmjs.com/package/zod)
 - [Dayjs for date parsing and manipulation](https://www.npmjs.com/package/dayjs)
+- [Phosphor icons lib](https://phosphoricons.com/)
