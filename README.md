@@ -30,8 +30,8 @@ npm create vite@latest # framework: React, variant: typescript
 # Tailwind setup
 
 ```bash
-npm i -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p # needs -p flag to create postcss config file and integrate with Vite
+npm i -D tailwindcss postcss autoprefixer # postcss and autoprefixer are only required for the web project
+npx tailwindcss init -p # needs -p flag to create postcss config file and integrate with Vite (to initialize tailwind on the mobile folder you don't need the -p flag)
 ```
 
 # Expo setup
@@ -56,3 +56,7 @@ expo start # to start local application
 - [Zod for backend requests validation and type definitions](https://www.npmjs.com/package/zod)
 - [Dayjs for date parsing and manipulation](https://www.npmjs.com/package/dayjs)
 - [Phosphor icons lib](https://phosphoricons.com/)
+- [NativeWind to use Tailwind in React Native](https://www.nativewind.dev/)
+- [SDK to use SVGs in react native](https://docs.expo.dev/versions/latest/sdk/svg/)
+- [Module to use SVGs as components in react native: react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
+- [List of Expo vector icons](https://oblador.github.io/react-native-vector-icons/)
