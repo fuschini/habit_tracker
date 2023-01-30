@@ -30,8 +30,8 @@ npm create vite@latest # framework: React, variant: typescript
 # Tailwind setup
 
 ```bash
-npm i -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p # needs -p flag to create postcss config file and integrate with Vite
+npm i -D tailwindcss postcss autoprefixer # postcss and autoprefixer are only required for the web project
+npx tailwindcss init -p # needs -p flag to create postcss config file and integrate with Vite (to initialize tailwind on the mobile folder you don't need the -p flag)
 ```
 
 # Expo setup
@@ -55,3 +55,4 @@ expo start # to start local application
 - [Expo for facilitating the dev environment for the mobile version](https://expo.dev/)
 - [Zod for backend requests validation and type definitions](https://www.npmjs.com/package/zod)
 - [Dayjs for date parsing and manipulation](https://www.npmjs.com/package/dayjs)
+- [NativeWind to use Tailwind in React Native](https://www.nativewind.dev/)
