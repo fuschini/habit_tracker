@@ -60,3 +60,5 @@ expo start # to start local application
 - [SDK to use SVGs in react native](https://docs.expo.dev/versions/latest/sdk/svg/)
 - [Module to use SVGs as components in react native: react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
 - [List of Expo vector icons](https://oblador.github.io/react-native-vector-icons/)
+- [Radix react accessible components library](https://www.radix-ui.com/)
+- [CLSX to build className strings conditionally](https://www.npmjs.com/package/clsx)
