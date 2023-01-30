@@ -56,3 +56,5 @@ expo start # to start local application
 - [Zod for backend requests validation and type definitions](https://www.npmjs.com/package/zod)
 - [Dayjs for date parsing and manipulation](https://www.npmjs.com/package/dayjs)
 - [NativeWind to use Tailwind in React Native](https://www.nativewind.dev/)
+- [SDK to use SVGs in react native](https://docs.expo.dev/versions/latest/sdk/svg/)
+- [Module to use SVGs as components in react native: react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
