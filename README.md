@@ -58,3 +58,4 @@ expo start # to start local application
 - [NativeWind to use Tailwind in React Native](https://www.nativewind.dev/)
 - [SDK to use SVGs in react native](https://docs.expo.dev/versions/latest/sdk/svg/)
 - [Module to use SVGs as components in react native: react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
+- [List of Expo vector icons](https://oblador.github.io/react-native-vector-icons/)
