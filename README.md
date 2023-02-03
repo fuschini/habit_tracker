@@ -62,3 +62,4 @@ expo start # to start local application
 - [List of Expo vector icons](https://oblador.github.io/react-native-vector-icons/)
 - [Radix react accessible components library](https://www.radix-ui.com/)
 - [CLSX to build className strings conditionally](https://www.npmjs.com/package/clsx)
+- [React navigation](https://reactnavigation.org/)
