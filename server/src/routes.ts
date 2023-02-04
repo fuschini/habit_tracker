@@ -67,9 +67,10 @@ export async function appRoutes(app: FastifyInstance) {
             }
         })
 
+        // Example of JS nullish coalescing
         const completedHabits = day?.dayHabits.map(dayHabit => {
             return dayHabit.habit_id
-        })
+        }) ?? []
 
         return {
             possibleHabits,
