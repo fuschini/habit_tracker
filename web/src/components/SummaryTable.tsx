@@ -46,7 +46,7 @@ export function SummaryTable() {
                         return dayjs(date).isSame(day.date, 'day')
                     })
 
-                    return <HabitDay date={date} amount={dayInSummary?.amount} completed={dayInSummary?.completed} />
+                    return <HabitDay key={date.toString()} date={date} amount={dayInSummary?.amount} completed={dayInSummary?.completed} />
                 })}
 
                 {amountOfDaysToFill > 0 && Array.from({ length: amountOfDaysToFill }).map((value, index) => {
