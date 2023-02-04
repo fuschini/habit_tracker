@@ -27,6 +27,26 @@ export function HabitsList({ date }: HabitListProps) {
         })
     }, [])
 
+    async function handleToggleHabit(habitId: string) {
+        // NOTE: the ! operator reassures that habitsInfo will not be undefined and removes TS' error
+        const isHabitCompleted = habitsInfo!.completedHabits.includes(habitId)
+
+        await api.patch(`/habits/${habitId}/toggle`)
+
+        let completedHabits: string[] = []
+
+        if (isHabitCompleted) {
+            completedHabits = habitsInfo!.completedHabits.filter((id) => id != habitId)
+        } else {
+            completedHabits = [...habitsInfo!.completedHabits, habitId]
+        }
+
+        setHabitsInfo({
+            possibleHabits: habitsInfo!.possibleHabits,
+            completedHabits
+        })
+    }
+
     return (
         <div className='mt-6 flex flex-col gap-3'>
             {habitsInfo?.possibleHabits.map(habit => {
@@ -35,6 +55,9 @@ export function HabitsList({ date }: HabitListProps) {
                         key={habit.id}
                         className='flex items-center gap-3 group'
                         checked={habitsInfo.completedHabits.includes(habit.id)}
+                        onCheckedChange={() => {
+                            handleToggleHabit(habit.id)
+                        }}
                     >
                         <div className='h-8 w-8 flex rounded-lg items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 group-data-[state=checked]:border-green-500'>
                             <Checkbox.Indicator>
