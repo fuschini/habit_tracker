@@ -3,9 +3,9 @@ import { generateDatesFromYearBeginning } from '../utils/generate-dates-from-yea
 import { HabitDay, DAY_SIZE } from "../components/HabitDay";
 import { Header } from "../components/Header";
 import { Loading } from "../components/Loading";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import { api } from "../lib/axios";
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import dayjs from "dayjs";
 
 const weekDays = ['S', 'M', 'T', 'W', 'T', 'F', 'S']
@@ -39,9 +39,9 @@ export function Home() {
         }
     }
 
-    useEffect(() => {
+    useFocusEffect(useCallback(() => {
         fetchData()
-    }, [])
+    }, []))
 
     if (loading) {
         return (
