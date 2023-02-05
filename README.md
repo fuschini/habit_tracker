@@ -14,8 +14,9 @@ Simple habit tracker using GitHub's commit graph concept for visualization of co
 
 - NodeJS
 - TypeScript
-- Prisma ORM
 - Fastify
+- Prisma ORM
+- SQLite
 
 ### Frontend Web
 
