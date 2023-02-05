@@ -24,7 +24,10 @@ async function run() {
                     create: [
                         { week_day: 1 },
                         { week_day: 2 },
-                        { week_day: 3 }
+                        { week_day: 3 },
+                        { week_day: 4 },
+                        { week_day: 5 },
+                        { week_day: 0 },
                     ]
                 }
             }
@@ -37,30 +40,13 @@ async function run() {
                 created_at: secondHabitCreationDate,
                 weekDays: {
                     create: [
-                        { week_day: 3 },
-                        { week_day: 4 },
-                        { week_day: 5 }
-                    ]
-                }
-            }
-        }),
-
-        prisma.habit.create({
-            data: {
-                id: thirdHabitId,
-                title: 'Sleep for 8h',
-                created_at: thirdHabitCreationDate,
-                weekDays: {
-                    create: [
                         { week_day: 1 },
-                        { week_day: 2 },
                         { week_day: 3 },
-                        { week_day: 4 },
                         { week_day: 5 }
                     ]
                 }
             }
-        }),
+        })
 
     ])
 
