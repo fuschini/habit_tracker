@@ -32,7 +32,21 @@ Simple habit tracker using GitHub's commit graph concept for visualization of co
 - Expo
 - Tailwind CSS framework (NativeWind)
 
-# Fastify and typescript setup steps
+# Project strucutre
+
+The project has 3 main modules:
+
+- Backend: `./server`
+- Frontend web: `./web`
+- Frontend mobile: `./mobile`
+
+Each one of these folders follow different structures according to the frameworks adopted and can run independently.
+
+# Running the application
+
+Go to the folder of the module you want to run and type `npm run dev`.
+
+# Fastify and typescript initial setup steps
 
 ```bash
 npm i fastify
@@ -43,7 +57,7 @@ npm i tsx -D
 # create dev script in package.json with tsx watch src/server.ts
 ```
 
-# Prisma setup
+# Prisma initial setup
 
 ```bash
 npm i -D prisma
@@ -53,20 +67,20 @@ npx prisma migrate dev # to generate a migration (asks for the name of the migra
 npx prisma studio # opens browser interface to inspect the DB
 ```
 
-# Vite setup
+# Vite initial setup
 
 ```bash
 npm create vite@latest # framework: React, variant: typescript
 ```
 
-# Tailwind setup
+# Tailwind initial setup
 
 ```bash
 npm i -D tailwindcss postcss autoprefixer # postcss and autoprefixer are only required for the web project
 npx tailwindcss init -p # needs -p flag to create postcss config file and integrate with Vite (to initialize tailwind on the mobile folder you don't need the -p flag)
 ```
 
-# Expo setup
+# Expo initial setup
 
 Following the steps on [this link](https://react-native.rocketseat.dev/expo-managed/macos)
 
