@@ -112,3 +112,11 @@ expo start # to start local application
 - [React navigation](https://reactnavigation.org/)
 - [React native reanimated to display animations](https://docs.swmansion.com/react-native-reanimated/)
   - [Expo's documentation on React native reanimated](https://docs.expo.dev/versions/latest/sdk/reanimated/)
+
+# Known issue
+
+I didn’t implement the rules to only allow a habit to be edited today and that generated inconsistencies in the backend logic.
+
+If you try to check a habit from a past day, the frontend will allow it but the backend will toggle the habit on the day the request was actually received.
+
+To fix that, the frontend should disable the habit checkboxes in past days so the user can’t click them.
