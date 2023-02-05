@@ -1,6 +1,38 @@
-# habit_tracker
+# Fuschabit tracker
 
-# Project setup
+Simple habit tracker using GitHub's commit graph concept for visualization of completed habits over time.
+
+## Features
+
+- Create habits that repeat in specific days of the week
+- Track which habits you completed in each day
+- Visualize the summary of completed habits over time
+
+## Tech stack
+
+### Backend
+
+- NodeJS
+- TypeScript
+- Prisma ORM
+- Fastify
+
+### Frontend Web
+
+- React
+- TypeScript
+- Vite
+- Radix UI accessible component library
+- Tailwind CSS framework
+
+### Frontend Mobile
+
+- React Native
+- TypeScript
+- Expo
+- Tailwind CSS framework (NativeWind)
+
+# Fastify and typescript setup steps
 
 ```bash
 npm i fastify
