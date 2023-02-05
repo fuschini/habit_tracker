@@ -63,3 +63,5 @@ expo start # to start local application
 - [Radix react accessible components library](https://www.radix-ui.com/)
 - [CLSX to build className strings conditionally](https://www.npmjs.com/package/clsx)
 - [React navigation](https://reactnavigation.org/)
+- [React native reanimated to display animations](https://docs.swmansion.com/react-native-reanimated/)
+  - [Expo's documentation on React native reanimated](https://docs.expo.dev/versions/latest/sdk/reanimated/)
